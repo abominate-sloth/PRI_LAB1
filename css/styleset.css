@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("../fonts/myriadpro-bold.ttf")
+}
+
+@font-face {
+    font-family: "Georgia Italic";
+    src: url("../fonts/georgia-italic.ttf");
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato Light";
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url("../fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato Heavy";
+    src: url("../fonts/Lato-Heavy.ttf");
+}
+
+@font-face {
+    font-family: "Lato SemiBold";
+    src: url("../fonts/Lato-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat UltraLight";
+    src: url("../fonts/Montserrat-UltraLight.otf");
+}
