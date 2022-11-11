@@ -42,3 +42,194 @@
     font-family: "Montserrat UltraLight";
     src: url("../fonts/Montserrat-UltraLight.otf");
 }
+
+body, html {
+    font-family: "Lato Regular", sans-serif;
+    width: 1600px;
+    height: 3634px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+/*header*/
+
+.header, .header_menu {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header_menu {
+    width: 1600px;
+    height: 945px;
+    background-blend-mode: darken;
+    background: rgba(0,0,0,0.83) url(../images/header.jpg) no-repeat;/*first image*/
+}
+
+.the_navigator {
+    position: fixed;
+    z-index: 999999;
+    margin: 0 auto;
+    margin-left: 200px;
+    border-bottom: 1px solid #2F2E33;
+    height: 89px;
+    width: 1200px;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.navigator a {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.navigator ul {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.navigator ul li {
+    margin-right: 61px;
+    font-size: 16px;
+}
+
+.navigator ul li a {
+    padding-top: 19px;
+    padding-bottom: 33px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigator ul li:last-child {
+    margin-right: 0;
+}
+
+.nav {
+    margin-left: 350px;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 24px 1px;
+}
+
+.navigator_link:hover{
+    color: white;
+}
+  
+.navigator_link:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s;
+}
+
+.navigator_link:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left:0;bottom: -1px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+}
+
+.home .intro {
+    text-align: center;
+    position: relative;
+    left: 1px;
+    top: 268px;
+}
+
+.home p {
+    font: 32px 'Georgia Italic', sans-serif;
+    font-style: italic;
+    margin: 14px auto;
+    line-height: 31px;
+    color: white;
+}
+
+.home h2 {
+    font-family: "Myriad Pro Bold", sans-serif;
+    font-size: 72px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.authorise {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    background-color: #2FAC6C;
+}
+
+.login {
+    position: absolute;
+    height: 120px;
+    width: 53.7%;
+    background: #21424A;
+}
+
+.register {
+    height: 120px;
+    width: 50.3%;
+    float: right;
+    background: #2FAC6C;
+    transform: skewX(-13deg);
+}
+
+.register a, .login a {
+    position: relative;
+    top: 47px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.register a {
+    right: 96px;
+    transform: skewX(13deg);
+}
+
+.login a {
+    left: 75px;
+}
+
+.login a:hover, .register a:hover {
+    color: #dedede;
+}
+
+.login a:active {
+    color: #14292f;
+}
+
+.register a:active {
+    color: #125F38;
+}
+
+
+/*fixing navigation display*/
+
+.changeColor {
+    background-color: black;
+}
+
+.addPaddings {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 0px;    
+}
