@@ -291,5 +291,114 @@ body, html {
     border-left: 1px solid #D9D9D9;
 }
 
+/*Price Table*/
 
+.domain_prices {
+    color: #CBCBCB;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    border: 1px solid #D9D9D9;
+    margin: 0 auto;
+    width: 888px;
+    height: 173px;
+}
 
+.prices_table .row td.top::after {
+    content: "";
+    display: block;
+    right: -6px;
+    bottom: -6px;
+    width: 12px;
+    z-index: 1;
+    border-radius: 100%;
+    height: 12px;
+    position: absolute;
+    background-color: white;
+}
+
+.prices_table .row td.top:last-child:after {
+    content: "";
+    display: none;
+}
+
+.prices_table {
+    position: relative;
+    bottom: 10px;
+    font-size: 14px;
+    width: 856px;
+    height: 170px;
+    display: block;
+}
+
+.row {
+    margin: 0 14px;
+    display: flex;
+}
+
+.row td {
+    position: relative;
+    padding: 40px 40px;
+    width: 14%;
+}
+
+.row td.top {
+    border-bottom: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+}
+
+.row td.bottom {
+    border-right: 1px solid #D9D9D9;
+}
+
+.row td.bottom:last-child, .row td.top:last-child {
+    border-right: none;
+}
+
+td.top:first-child {
+    padding-top: 9px;
+    padding-right: 55px;
+}
+
+td.top:last-child {
+    padding-top: 9px;
+    padding-left: 54px;
+}
+
+td.bottom:first-child {
+    padding-right: 55px;
+}
+
+td.bottom:last-child {
+    padding-top: 20px;
+    padding-left: 54px;
+}
+
+td.bottom:nth-child(n) {
+    padding-top: 19px;
+    padding-bottom: 29px;
+}
+
+td.top.year {
+    padding: 9px 56px 9px 56px;
+}
+
+td.bottom.year {
+    padding: 19px 56px 19px 56px;
+}
+
+td.top.price {
+    padding: 9px 56px 9px 56px;
+}
+
+td.bottom.price {
+    padding: 18px 56px 19px 56px;
+}
+
+td.top::before, td.bottom::before {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 18px;
+}
