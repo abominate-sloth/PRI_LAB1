@@ -221,7 +221,6 @@ body, html {
     color: #125F38;
 }
 
-
 /*fixing navigation display*/
 
 .changeColor {
@@ -401,4 +400,200 @@ td.top::before, td.bottom::before {
     display: block;
     width: 110px;
     height: 18px;
+}
+
+/*4 offers*/
+
+.icons {
+    position: relative;
+}
+
+.anchor {
+    background: url("../images/basic-package.png") no-repeat 18px 20px;
+}
+
+.halfstar {
+    background: url("../images/half-star.png") no-repeat 18px 20px;
+}
+
+.star {
+    background: url("../images/star.png") no-repeat 18px 20px;
+}
+
+.diamond {
+    background: url("../images/diamond.png") no-repeat 18px 20px;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circle_size {
+    display: block;
+    margin: 14px auto;
+    width: 60px;
+    height: 60px;
+}
+
+.circle {
+    stroke: #F9D423;
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+.grey_offer .circle {
+    stroke: #7E8C8D;
+}
+
+.red_offer .circle {
+    stroke: #FA5F41;
+}
+
+.green_offer .circle {
+    stroke: #18BC9A;
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    height: 760px;
+}
+
+.dottes {
+    display: flex;
+    align-self: center;
+    width: 75%;
+    border-bottom: 4px dotted #D7D7D7;
+}
+
+.offer_sets {
+    display: flex;
+    margin: -281px 0 100px 200px;
+    height: 570px;
+}
+
+.offer_set {
+    margin-right: 57px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 15.5%;
+    height: 520px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.offer_set:first-child {
+    border-top: 4px solid #F9D423;
+}
+
+.grey_offer {
+    border-top: 4px solid #7E8C8D;
+}
+
+.red_offer {
+    border-top: 4px solid #FA5F41;
+}
+
+.green_offer {
+    border-top: 4px solid #18BC9A;
+}
+
+.offer_name {
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.offer_list {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 5px 0 10px;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.list_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 9.5px;
+}
+
+.item {
+    color: #B4B4B4;
+}
+
+.item_yellow {
+    color: #F9D423;
+}
+
+.item_grey {
+    color: #7E8C8D;
+}
+
+.item_red {
+    color: #FA5F41;
+}
+
+.item_green {
+    color: #18BC9A;
+}
+
+.offer_prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.offer_price .price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.price sup {
+    font-size: 16px;
+}
+
+.price sub {
+    font-weight: 200;
+    font-size: 13px;
+    color: #B4B4B4
+}
+
+.plan {
+    text-decoration: none;
+    color: black;
+    border-top: 3px solid #F9D423;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offer_prices .yellow_price {
+    border-top: 3px solid #F9D423;
+}
+
+.offer_prices .grey_price {
+    border-top: 3px solid #7E8C8D;
+}
+
+.offer_prices .red_price {
+    border-top: 3px solid #FA5F41;
+}
+
+.offer_prices .green_price {
+    border-top: 3px solid #18BC9A;
 }
