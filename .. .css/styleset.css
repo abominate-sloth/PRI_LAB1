@@ -598,7 +598,6 @@ td.top::before, td.bottom::before {
     border-top: 3px solid #18BC9A;
 }
 
-
 .slider__panel {
     position: relative;
     width: 1600px;
@@ -698,7 +697,7 @@ td.top::before, td.bottom::before {
     margin-top: 10px;
 }
 
-.switchs {
+ .switchs {
     position: absolute;
     width: 90px;
     height: 16px;
@@ -707,7 +706,7 @@ td.top::before, td.bottom::before {
     border-left: 1px solid #979797;
 }
 
-.switch {
+ .switch {
     /*стиль отдельного переключателя*/
     cursor: pointer;
     width: 8px;
