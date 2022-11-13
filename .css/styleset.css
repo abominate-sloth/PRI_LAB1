@@ -597,3 +597,174 @@ td.top::before, td.bottom::before {
 .offer_prices .green_price {
     border-top: 3px solid #18BC9A;
 }
+
+
+.slider__panel {
+    position: relative;
+    width: 1600px;
+    height: 190px;
+}
+
+.slider_background {
+    position: absolute;
+}
+
+#slider {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    top: 10px;
+}
+
+#quote__slides article {
+    /*все изображения справа друг от доруга*/
+    width: 20%;
+    float: left;
+}
+
+#quote__slides .quote {
+    /*устанавливает общий размер блока с изображениями*/
+    width: 300%;
+}
+
+#text_limit {
+    /*сркывает все, что находится за пределами этого блока*/
+    position: absolute;
+    left: 325px;
+    top: 37px;
+    width: 950px;
+    height: 70px;
+    overflow: hidden;
+}
+
+#author_limit {
+    /*сркывает все, что находится за пределами этого блока*/
+    position: absolute;
+    left: 612px;
+    top: 108px;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.author {
+    width: 900px;
+}
+
+#desktop:checked~#slider {
+    /*размер всего слайдера*/
+    max-width: 960px;
+    /*максимальнная длинна*/
+}
+
+.quote__slide {
+    width: 950px;
+    height: 70px;
+    float: left;
+}
+
+.author_slide {
+    margin-right: 50px;
+    width: 150px;
+    height: 30px;
+    float: left;
+}
+
+.standart_quote {
+    position: absolute;
+    text-align: center;
+    color: #f5f5f5;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 18.0px;
+    width: 950px;
+    height: 90px;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    font-family: "Lato Light", sans-serif;
+}
+
+.quote_author {
+    position: absolute;
+    text-align: right;
+    color: #f5f5f5;
+    font-family: "Lato Bold", sans-serif;
+    font-weight: 600;
+    font-size: 18.5px;
+    width: 150px;
+    height: 20px;
+    /*line-height: 1.5em;*/
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+}
+
+.switchs {
+    position: absolute;
+    width: 90px;
+    height: 16px;
+    margin-left: 818px;
+    margin-top: 123px;
+    border-left: 1px solid #979797;
+}
+
+.switch {
+    /*стиль отдельного переключателя*/
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    margin: 4px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.start_of_switchs {
+    margin-left: -13px;
+}
+
+label {
+    /*при наведении на стрелки или переключатели курсор изменится*/
+    cursor: pointer;
+}
+
+.slider {
+    /*скрывает стандартные переключатели на странице*/
+    display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#point1:checked~#quote__slides .quote {
+    margin-left: 0;
+}
+
+#point1:checked~#names__slides .author {
+    margin-left: 45px;
+}
+
+#point2:checked~#quote__slides .quote {
+    margin-left: -950px;
+}
+
+#point2:checked~#names__slides .author {
+    margin-left: -156px;
+}
+
+#point3:checked~#quote__slides .quote {
+    margin-left: -1900px;
+}
+
+#point3:checked~#names__slides .author {
+    margin-left: -356px;
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#point1:checked~#active label:nth-child(1),
+#point2:checked~#active label:nth-child(2),
+#point3:checked~#active label:nth-child(3) {
+    background: white;
+}
+
+.quote, .author {
+    /*анимация пролистывания изображений*/
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
