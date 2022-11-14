@@ -666,8 +666,12 @@ section.about_us {
     padding-left: 28px;
 }
 
+
 .johnathan {
     padding-left: 30px;
+}
+
+.profile:last-child{
     margin-right: 70px;
 }
 
@@ -680,12 +684,12 @@ section.about_us {
 
 .profile li.prof {
     font-family: "Lato Regular", sans-serif;
-    opacity: 0.50;
     font-size: 15px;
+    opacity: .5;
     margin-bottom: 10px;
 }
 
-.profile li.references {
+.profile li.horizontally {
     position: relative;
     right: 10px;
     display: inline-block;
@@ -708,10 +712,10 @@ ul.profile {
     color: #c4c4c4;
 }
 
-.fa-facebook-f:hover, .fa-twitter:hover, .fa-link:hover{
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-link:hover
+{
     color: #198ABC;
 }
-
 /*===ABOUT US SECTION END===*/
 
 
