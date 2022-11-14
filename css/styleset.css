@@ -704,12 +704,11 @@ ul.profile {
     list-style-type: none;
 }
 
-.fa-facebook-f, .fa-twitter, .fa fa-link{
+.fa-facebook-f, .fa-twitter, .fa-link{
     color: #c4c4c4;
 }
 
-.fa-facebook-f:hover, .fa-twitter:hover, .fa fa-link:hover
-{
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-link:hover{
     color: #198ABC;
 }
 
